@@ -1,0 +1,8 @@
+version: '3'
+services:
+  scala:
+    container_name: scala
+    image: bigtruedata/scala:2.11
+    tty: true
+    volumes:
+      - ./src:/src
