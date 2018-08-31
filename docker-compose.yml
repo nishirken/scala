@@ -1,9 +1,9 @@
-version: '3'
+version: '3.2'
 services:
   scala:
     container_name: scala
     image: bigtruedata/sbt:0.13.15-2.11.11
     tty: true
     volumes:
-      - ./src:/app/src
-      - ./build.sbt:/app/build.sbt
+    - ./src:/app/src:Z
+    - ./build.sbt:/app/build.sbt:Z
